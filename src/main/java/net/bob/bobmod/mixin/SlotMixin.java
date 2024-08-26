@@ -27,6 +27,4 @@ public class SlotMixin {
     private void modifyMaxItemCount(ItemStack stack, CallbackInfoReturnable<Integer> cir){
         cir.setReturnValue(Math.min(999, stack.getMaxCount()));
     }
-
-    ItemEntity
 }
