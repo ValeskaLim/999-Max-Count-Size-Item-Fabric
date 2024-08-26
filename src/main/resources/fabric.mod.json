@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "bobmod",
+	"version": "${version}",
+	"name": "Bob Mod Fabric",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"BoboMad!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/bobmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.bob.bobmod.BobModFabric"
+		],
+		"client": [
+			"net.bob.bobmod.BobModFabricClient"
+		],
+		"fabric-datagen": [
+			"net.bob.bobmod.BobModFabricDataGenerator"
+		]
+	},
+	"mixins": [
+		"bobmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.2",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

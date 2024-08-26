@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "net.bob.bobmod.mixin",
+	"compatibilityLevel": "JAVA_17",
+	"mixins": [
+		"CobblestoneMixin",
+		"CobblestoneMixin1",
+		"InventoryMixin",
+		"PlayerEntityMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
